@@ -7,7 +7,6 @@ Este é um projeto que utiliza o framework Express para criar um servidor backen
 Antes de iniciar, certifique-se de ter o seguinte instalado em sua máquina:
 
 - Node.js
-- MongoDB
 
 ## Instalação
 
