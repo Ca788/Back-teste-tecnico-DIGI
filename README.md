@@ -11,7 +11,7 @@ Antes de iniciar, certifique-se de ter o seguinte instalado em sua máquina:
 
 ## Instalação
 
-1. Clone este repositório: `git clone `
+1. Clone este repositório: `git clone git@github.com:Ca788/Back-teste-tecnico-DIGI.git`
 2. Instale as dependências: `npm install`
 
 ## Configuração
