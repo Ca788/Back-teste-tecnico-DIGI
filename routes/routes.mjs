@@ -1,7 +1,8 @@
-const express = require("express");
+import express from "express";
+import Question from "../models/question.mjs";
+import User from "../models/user.mjs";
+
 const router = express.Router();
-const Question = require("../models/question");
-const User = require("../models/user");
 
 // GET TODAS AS QUESTÕES
 router.get("/questions", async (req, res) => {
@@ -9,7 +10,7 @@ router.get("/questions", async (req, res) => {
     const questions = await Question.find();
     return res.status(200).json(questions);
   } catch (error) {
-    return res.status(500).json({ error: error });
+    return res.status(500).json({ error: error.message });
   }
 });
 
@@ -83,4 +84,4 @@ router.get("/", (req, res) => {
   res.send("API 😁");
 });
 
-module.exports = router;
+export default router;
